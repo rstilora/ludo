@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>WM Ludo</title>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+
+    <div id="ludo_main">
+        <div class="ludo_screen_conent">
+            <!-- ludo Top-->
+            <div class="ludo_d_top">
+                <div class="ludo_d_top_box player_board plyr_top_1" data-board-id="1">
+                    <div class="player_board_white" data-kati-count="4">
+                        <span class="bg-circle"><i class="kati rd" id="r1"></i></span>
+                        <span class="bg-circle"><i class="kati rd" id="r2"></i></span>
+                        <span class="bg-circle"><i class="kati rd" id="r3"></i></span>
+                        <span class="bg-circle"><i class="kati rd" id="r4"></i></span>
+                    </div>
+                </div>
+                <div class="ludo_d_top_box players_path ludotops">
+                    <div class="ludo_d_top_box_clmn_m column_main">
+                        <div class="column " id="t24"></div>
+                        <div class="column " id="t25"></div>
+                        <div class="column " id="t26"></div>
+                        <div class="column " id="t23"></div>
+                        <div class="column safe" id="50"></div>
+                        <div class="column safe" id="t27"></div>
+                        <div class="column " id="t22"></div>
+                        <div class="column safe" id="47"></div>
+                        <div class="column " id="t28"></div>
+                        <div class="column " id="t21"></div>
+                        <div class="column safe" id="44"></div>
+                        <div class="column " id="t29"></div>
+                        <div class="column " id="t20"></div>
+                        <div class="column safe" id="41"></div>
+                        <div class="column " id="t30"></div>
+                        <div class="column " id="t19"></div>
+                        <div class="column safe" id="38"></div>
+                        <div class="column " id="t31"></div>
+                    </div>
+                </div>
+                <div class="ludo_d_top_box player_board plyr_top_2" data-board-id="2">
+                    <div class="player_board_white" data-kati-count="4">
+                        <span class="bg-circle"><i class="kati gn" id="g1"></i></span>
+                        <span class="bg-circle"><i class="kati gn" id="g2"></i></span>
+                        <span class="bg-circle"><i class="kati gn" id="g3"></i></span>
+                        <span class="bg-circle"><i class="kati gn" id="g4"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ludo Mid-->
+            <div class="ludo_d_mid">
+
+                <div class="ludomids ludo_d_mid_box_left players_path ">
+                    <div class="ludo_d_mid_box_clmn_m column_main">
+
+
+                        <div class="column " id="t13"></div>
+                        <div class="column safe" id="t14"></div>
+                        <div class="column " id="t15"></div>
+                        <div class="column " id="t16"></div>
+                        <div class="column " id="t17"></div>
+                        <div class="column " id="t18"></div>
+
+                        <div class="column " id="t12"></div>
+                        <div class="column safe" id="c29"></div>
+                        <div class="column safe" id="c28"></div>
+                        <div class="column safe" id="c27"></div>
+                        <div class="column safe" id="c26"></div>
+                        <div class="column safe" id="c25"></div>
+
+                        <div class="column " id="t11"></div>
+                        <div class="column " id="t10"></div>
+                        <div class="column " id="t9"></div>
+                        <div class="column " id="t8"></div>
+                        <div class="column " id="t7"></div>
+                        <div class="column " id="t6"></div>
+                    </div>
+                </div>
+                <div id="EndSteps" class="ludomids finalStage_main ">
+                </div>
+                <div class="ludomids ludo_d_mid_box_right players_path ">
+                    <div class="ludo_d_mid_box_clmn_m column_main">
+
+                        <div class="column " id="t32"></div>
+                        <div class="column " id="t33"></div>
+                        <div class="column " id="t34"></div>
+                        <div class="column " id="t35"></div>
+                        <div class="column " id="t36"></div>
+                        <div class="column " id="t37"></div>
+                        <div class="column safe" id="61"></div>
+                        <div class="column safe" id="62"></div>
+                        <div class="column safe" id="63"></div>
+                        <div class="column safe" id="64"></div>
+                        <div class="column safe" id="65"></div>
+                        <div class="column " id="t38"></div>
+                        <div class="column " id="t44"></div>
+                        <div class="column " id="t43"></div>
+                        <div class="column " id="t42"></div>
+                        <div class="column " id="t41"></div>
+                        <div class="column safe" id="t40"></div>
+                        <div class="column " id="t39"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ludo Bottom-->
+            <div class="ludo_d_bottom">
+                <div class="ludo_d_bottom_box player_board plyr_top_3" data-board-id="3">
+                    <div class="player_board_white" data-kati-count="4">
+                        <span class="bg-circle"><i class="kati bl" id="bl1"></i></span>
+                        <span class="bg-circle"><i class="kati bl" id="bl2"></i></span>
+                        <span class="bg-circle"><i class="kati bl" id="bl3"></i></span>
+                        <span class="bg-circle"><i class="kati bl" id="bl4"></i></span>
+
+                    </div>
+                </div>
+                <div class="ludo_d_bottom_box players_path ludotops">
+                    <div class="ludo_d_top_box_clmn_m column_main">
+                        <div class="column " id="t5"></div>
+                        <div class="column safe" id="b56"></div>
+                        <div class="column " id="t45"></div>
+                        <div class="column " id="t4"></div>
+                        <div class="column safe" id="b55"></div>
+                        <div class="column " id="t46"></div>
+                        <div class="column " id="t3"></div>
+                        <div class="column safe" id="b54"></div>
+                        <div class="column " id="t47"></div>
+                        <div class="column " id="t2"></div>
+                        <div class="column safe" id="b53"></div>
+                        <div class="column " id="t48"></div>
+                        <div class="column safe " id="t1"></div>
+                        <div class="column safe" id="b52"></div>
+                        <div class="column " id="t49"></div>
+                        <div class="column" id="t52"></div>
+                        <div class="column " id="t51"></div>
+                        <div class="column " id="t50"></div>
+                    </div>
+                </div>
+                <div class="ludo_d_bottom_box player_board plyr_top_4" data-board-id="4">
+                    <div class="player_board_white" data-kati-count="4">
+                        <span class="bg-circle"><i class="kati yl" id="y1"></i></span>
+                        <span class="bg-circle"><i class="kati yl" id="y2"></i></span>
+                        <span class="bg-circle"><i class="kati yl" id="y3"></i></span>
+                        <span class="bg-circle"><i class="kati yl" id="y4"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ludu_passas" data-chal-count="6">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+    </div>
+
+<script src="js/ludo.js"></script>
+
+</body>
+</html>
